@@ -2,24 +2,16 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>コード表示＆コピー</title>
+  <title>コードコピー</title>
   <style>
-    body {
-      font-family: monospace;
-      background-color: #f5f5f5;
-      padding: 20px;
-    }
     pre {
-      background-color: #eee;
-      border: 1px solid #ccc;
+      background: #eee;
       padding: 10px;
+      border: 1px solid #ccc;
       overflow-x: auto;
     }
     button {
       margin-top: 10px;
-      padding: 8px 12px;
-      font-size: 14px;
-      cursor: pointer;
     }
   </style>
 </head>
@@ -35,7 +27,7 @@
       navigator.clipboard.writeText(code).then(() => {
         alert("コピーしました！");
       }).catch(err => {
-        alert("コピーに失敗しました：" + err);
+        alert("コピーに失敗しました: " + err);
       });
     }
   </script>
